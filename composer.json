@@ -1,5 +1,5 @@
 {
-	"name": "benfiratkaya/Translator",
+	"name": "benfiratkaya/translator",
 	"type": "library",
 	"description": "Translator class for based PHP systems.",
 	"keywords": ["php", "translate", "translator"],
