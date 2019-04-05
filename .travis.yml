@@ -12,6 +12,6 @@ php:
     - 7.2
     - 7.3
 install:
-    - composer install --prefer-dist --no-interaction ---no-progres
+    - composer install
 script:
     - vendor/bin/phpunit
