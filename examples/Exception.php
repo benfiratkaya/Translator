@@ -2,10 +2,14 @@
 	use Translator\Translator;
 	use Translator\Exception;
 	
-	include_once 'translator/Exception.php';
-	include_once 'translator/Register.php';
-	include_once 'translator/Generator.php';
-	include_once 'translator/Translator.php';
+	// Composer
+	require '/vendor/autoload.php';
+	
+	// Include
+	//include_once 'translator/Exception.php';
+	//include_once 'translator/Register.php';
+	//include_once 'translator/Generator.php';
+	//include_once 'translator/Translator.php';
 	
 	// Exception
 	try {
