@@ -24,6 +24,10 @@
              "psr-4": {
                  "Translator\\": "src/"
              }
+         },
+         "autoload": {
+             "psr-4": {
+                 "Translator\\": "test/"
+             }
          }
-	
 }
