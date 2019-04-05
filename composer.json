@@ -1,0 +1,24 @@
+{
+	"name": "benfiratkaya/translator",
+	"type": "library",
+	"description": "Translator class for based PHP systems.",
+	"license": "MIT",
+	"keywords": ["php", "translate", "translator"],
+	"homepage": "https://github.com/benfiratkaya/Translator",
+	"authors": [
+		{
+			"name": "Fırat Kaya",
+			"email": "firat.kaya@punodi.com",
+			"homepage": "https://github.com/benfiratkaya",
+			"role": "Developer"
+		}
+	],
+	"require": {
+            "php": ">=5.4"
+	 },
+         "require-dev": {
+             "phpunit/phpunit": "~4.1"
+         }
+	
+	
+}
