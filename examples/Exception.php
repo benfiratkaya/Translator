@@ -3,7 +3,7 @@
 	use Translator\Exception;
 	
 	// Composer
-	require '/vendor/autoload.php';
+	require '../vendor/autoload.php';
 	
 	// Include
 	//include_once 'translator/Exception.php';
@@ -34,8 +34,4 @@
 		echo 'Error: '.$e->errorMessage();
 	}
 	
-	$user = 'Firat Kaya';
-	e__('Hello!');
-	e__('Hello %user%', array('%user%' => $user));
-	//echo t__('Hello!');
-	//echo t__('Hello %user%', array('%user%' => $user));
+	echo $translator->translate('Hello!');
