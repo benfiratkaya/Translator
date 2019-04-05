@@ -3,7 +3,7 @@
 	use Translator\Exception;
 	
 	// Composer
-	require '../vendor/autoload.php';
+	require '/vendorvendor/autoload.php';
 	
 	// Include
 	//include_once 'translator/Exception.php';
