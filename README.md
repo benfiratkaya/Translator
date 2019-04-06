@@ -179,6 +179,6 @@ Distributed under the MIT License. See [`LICENSE`](https://github.com/benfiratka
 
 ## Contact
 
-Firat Kaya - firat.kaya@example.com
+Firat Kaya - benfiratkaya@gmail.com
 
 Project Link: [https://github.com/benfiratkaya/Translator](https://github.com/benfiratkaya/Translator)
