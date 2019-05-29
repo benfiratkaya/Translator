@@ -151,7 +151,7 @@ echo translator('Hello!'); // Output: Hola!
 
 ```PHP
 $var = 'Firat Kaya';
-echo translator('Hello %user%', array('%user%', $var)); // Output: Hola Firat Kaya
+echo translator('Hello %user%', array('%user%' => $var)); // Output: Hola Firat Kaya
 ```
 
 > Other Functions
