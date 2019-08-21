@@ -16,7 +16,7 @@ It is a PHP class that provides multi-language system service to your website.
 #### Features:
 
 - Translate text with variable
-- Supported types: PHP, SQL, JSON, INI
+- Supported types: PHP, PHP (SQL), JSON, INI
 - Translate SQL querys
 - Tiny files and best performance
 - Simple usage
@@ -27,7 +27,7 @@ It is a PHP class that provides multi-language system service to your website.
 | Type | Support | Example |
 | ------------- | :-------------: | :-------------: |
 | PHP | :heavy_check_mark: | [Click](https://github.com/benfiratkaya/Translator/blob/master/examples/languages/php/es_ES.php) |
-| SQL | :heavy_check_mark: | [Click](https://github.com/benfiratkaya/Translator/blob/master/examples/languages/sql/es_ES.php) |
+| PHP (SQL) | :heavy_check_mark: | [Click](https://github.com/benfiratkaya/Translator/blob/master/examples/languages/sql/es_ES.php) |
 | JSON | :heavy_check_mark: | [Click](https://github.com/benfiratkaya/Translator/blob/master/examples/languages/json/es_ES.json) |
 | INI | :heavy_check_mark: | [Click](https://github.com/benfiratkaya/Translator/blob/master/examples/languages/ini/es_ES.ini) |
 
@@ -56,7 +56,7 @@ If you don't use composer in your project you can include files.
 ```PHP
 use Translator\Translator;
 use Translator\Exception;
-	
+
 include_once 'translator/Exception.php';
 include_once 'translator/Register.php';
 include_once 'translator/Generator.php';
@@ -67,7 +67,7 @@ include_once 'translator/Translator.php';
 
 #### Language File:
 
-Supported Types: PHP, SQL, JSON, INI
+Supported Types: PHP, PHP (SQL), JSON, INI
 
 > PHP (es_ES.php)
 
@@ -78,7 +78,7 @@ return array (
 );
 ```
 
-> SQL (es_ES.php)
+> PHP (SQL) (es_ES.php)
 
 ```PHP
 // Connect database
@@ -117,23 +117,23 @@ Hello %user% = Hola %user%
 ```PHP
 // Exception
 try {
-		
+
     // Exception Status, Type, Language, Path
 	$translator = new Translator(true, 'json', 'es_ES', 'translator/languages');
-		
+
 	// Register Functions: translate(), translator(), t__(), e__()
 	$translator->register();
-		
+
 	$translator->setException(true); // true or false
-		
+
 	// path/lang.type -> /languages/en_US.json
 	$translator->setType('json'); // php, json, ini
 	$translator->setLang('es_ES'); // Language Code.
 	$translator->setPath('translator/languages'); // Language Files Directory
-		
+
 	// Update Changes
 	$translator->update();
-		
+
 } catch (Exception $e) {
 	echo 'Error: '.$e->errorMessage();
 }
